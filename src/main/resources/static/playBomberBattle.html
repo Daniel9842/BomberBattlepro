@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<style>
+		body {
+			background-image: url("images/cielo.jfif");
+		}
+
+		canvas {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 70%;
+			height: 70%;
+		}
+	</style>
+	<title>BomberBattle</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<div class="bomberGame">
+		<canvas id="canvasMap"></canvas>
+		<canvas id="canvasPlayer"></canvas>
+		<canvas id="canvasBomb"></canvas>
+		<canvas id="canvasBoom"></canvas>
+		<canvas id="canvasMapBomb"></canvas>	
+		<canvas id="canvasExplosionBomb"></canvas>
+	</div>
+
+	<script src="js/canvasConf.js"></script>
+	<script src="js/map.js"></script>
+	<script src="js/boom.js"></script>
+	<script src="js/bomb.js"></script>
+	<script src="js/selectPlayer.js"></script>
+	<script src="js/player.js"></script>
+	<script src="js/mapBomb.js"></script>
+</body>
+
+</html>
